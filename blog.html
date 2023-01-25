@@ -1,23 +1,12 @@
-<?php 
-
-$conn = mysqli_connect('studentdb-maria.gl.umbc.edu','cneuman1','cneuman1','cneuman1');
-if(!$conn)
-	echo 'fail';
-	$title = $_POST['title'];
-	$content = $_POST['content'];
-	$tags = $_POST['tags'];
-	$sql = "INSERT INTO blogs(title, content, tags) values ('$title', '$content', '$tags')";
-	mysqli_query($conn,$sql);
-?>
-
 <!DOCTYPE html>
 <html lang = "en">
+
 <head>
 <link rel = "stylesheet" type = "text/css" href = "blog.css">
-<meta http-equiv="Content-Type" content="text/html; meta charset = "UTF-8">
+<meta charset = "UTF-8">
 <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 
-<title> Show Blog </title>
+<title> Create Blog </title>
 
 </head>
 
@@ -25,26 +14,35 @@ if(!$conn)
 
 <div class = "jumbotron">
 
-<h1> List of all posts for my Blog </h1>
+<h1> Create Your Blog Post </h1>
 
 </div>
 
-<div class = "container">
+<div class = "container"> 
 
-<h3> Your blog is posted! </h3>
+<h2> Post New Blog </h2>
 
-<h4> Check some other blogs... </h4>
+<form action = "action.php" method = "POST">
 
-<?php
+<label for = "title"> Title: </label>
+<input type = "text" name = "title" id = "title">
 
-$sql = "SELECT * FROM blogs";
-$result = mysqli_query($conn,$sql);
-while($row = $result->fetch_assoc()) {
-	echo " Title:<strong> " . $row["title"]. "</strong><br>"." " . $row["content"]. "<br>"." " . $row["tags"]. "<br>"." " . "<br><br><br>";
-}
-?>
+<p> <br> </p>
 
-<p> Create Another Post <a href = "blog.html"> Here </a> </p>
+<label for = "content"> Post: </label>
+<textarea rows = "8" id = "content" name = "content"></textarea>
+
+<p> <br> </p>
+
+<label for = "tags">Tags: </label>
+<input type = "text" id = "tags" name = "tags">
+
+<p> <br> </p>
+
+<button type = "submit">Submit</button>
+<button type = "reset">Reset</button>
+
+</form>
 
 </div>
 
