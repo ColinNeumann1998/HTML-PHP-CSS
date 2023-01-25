@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+<title> Book </title>
+
+</head>
+
+<body>
+
+<form action = "writeBookFile.php" method = "post">
+
+<div>
+
+<h1> My Favorite Popular Book </h1>
+<h3 class = "heading_1"> Book name </h3>
+<input type = "text" name = "book_name" required>
+
+<h3 class = "heading_2"> Author </h3>
+<input type = "text" name = "author_name" required>
+
+<h3 class = "heading_3"> International Standard Book Number (ISBN) </h3>
+<input type = "text" name = "isbn_name" required>
+
+<h3 class = "heading_4"> Genre </h3>
+<input type = "text" name = "genre_name" required>
+<br><br>
+<input type = "submit" id  = "submit_button1" value = "Submit">
+</div>
+</form>
+
+<form action = "readBookFile.php" method = "post">
+
+<div>
+
+<br><br>
+
+<input type = "submit" id = "submit_button" value = "Previous Data">
+</div>
+</form>
+</body>
+</html>
