@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)https://swe.umbc.edu/~zzaidi1/is448/chap5-examples/validator/validator.onclick.htm -->
+<html lang="en"><!-- validator.html
+     A document for validator.js
+     --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title> Illustrate form input validation&gt; </title>
+	<link rel="stylesheet" href="./example_files/form_proc.css" type="text/css">
+    <script type="text/javascript" src="./example_files/validator.onclick.js.download">
+    </script>
+  </head>
+  <body>
+    <h3> Customer Information </h3>
+    <form method="post" action="https://swe.umbc.edu/~zzaidi1/is448/chap5-examples/validator/display_info.php">
+      <p>
+        <label>
+          <input type="text" id="custName" name="customerName">
+          Name (last_name first_name)
+        </label>
+        <br><br>
+
+        <label>
+          <input type="text" id="phone" name="phoneNumber">
+          Phone number (ddd)ddd-dddd
+        </label>
+        <br>  <br>
+        <input type="submit" id="submitButton">
+		    <input type="reset" id="reset">
+      </p>
+    </form>
+
+  
+
+</body></html>
