@@ -1,0 +1,43 @@
+div {
+	background-color: lightblue;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+}
+
+.heading_1 {
+	color: red;
+	font-family: Arial;
+	font-style: oblique;
+	padding: 1%;
+}
+
+.heading_2 {
+	color: green; 
+	font-family: Arial;
+	font-style: oblique;
+	padding: 1%;
+}
+
+.heading_3 {
+	color: red;
+	font-family: Arial;
+	font-style: oblique;
+	padding: 1%;
+}
+
+.heading_4 {
+	color: green;
+	font-family: Arial;
+	font-style: oblique;
+	padding: 1%;
+}
+
+#submit_button1 {
+	border-width: 5px;
+}
+
+#submit_button {
+	border-width: 5px;
+}
