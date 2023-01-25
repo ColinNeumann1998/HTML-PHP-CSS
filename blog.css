@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.jumbotron {
+	background-color: beige;
+	padding: 2em;
+	margin-bottom: 5px;
+}
+
+.container {
+	text-align: center;
+}
+
+form {
+	max-width: 400px;
+	background-color: burlywood;
+	padding: 50px;
+	margin-left: 35rem;
+	text-align: center;
+}
